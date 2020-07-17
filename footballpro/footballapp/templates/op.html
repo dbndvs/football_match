@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	{% load static %}
+<title>Course Registration Form Flat Responsive Widget Template :: w3layouts</title>
+<!-- Meta tag Keywords -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Course Registration Form Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Meta tag Keywords -->
+<link href="{% static 'web/css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<!-- //js -->
+<!-- web-fonts -->
+<link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+<!-- //web-fonts -->
+
+	<style>
+		body{
+		background-image:
+		url("static/web/images/g6.jpg")
+		}
+	</style>
+    <style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+</head>
+<body>
+	<!-- banner -->
+<div class="video">
+	<div class="center-container">
+	    <div class="w3ls-agileinfo">
+			<h1>FIXTURE </h1>
+		</div>
+		 <!--<div class="bg-agile">-->
+			<!--<h2>Team </h2>-->
+			<!--<div class="login-form">-->
+                <table border="2">
+                    <tr>
+                        <th><font color="white">ID</font></th>
+                        <th><font color="white">DATE</font></th>
+                        <th><font color="white">VENUE</font></th>
+                        <th><font color="white">TEAM1</font></th>
+                        <th><font color="white">VS</font></th>
+                        <th><font color="white">TEAM2</font></th>
+
+
+                    </tr>
+                    {% for i in y %}
+                    <tr>
+
+                        <td>{{i.id}}</td>
+                        <td>{{i.date}}</td>
+                        <td>{{i.venue}}</td>
+                        <td>{{i.team1}}</td>
+                        <td><font color="white">VS</font></td>
+                        <td>{{i.team2}}</td>
+                    </tr>
+                    {% endfor %}
+
+                </table>
+                <br>
+
+
+
+
+			<!--</div>-->
+		<!--</div>-->
+	<!-- //banner -->
+	 <!--copyright-->
+		<div class="copy w3ls">
+	    </div>
+	<!--//copyright-->
+	</div>
+</div>
+</body>
+</html>
